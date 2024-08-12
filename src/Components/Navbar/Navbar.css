@@ -1,0 +1,176 @@
+.nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.nav.scrolled {
+  background-color: rgb(21, 21, 21);
+  padding: 0.75rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  transition: font-size 0.3s ease;
+}
+
+.logo.logo-scrolled {
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: #ff6b00;
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.navlink {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: #ff6b00;
+}
+
+.navlink.navlink-scrolled {
+  font-size: 0.8rem;
+}
+
+.navbutton button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.7rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbutton button.contact-btn-scrolled {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.6rem;
+}
+
+.navbutton button:hover {
+  background-color: #ff6b00;
+  color: #fff;
+}
+
+.active {
+  color: #ff6b00;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .navmenu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    flex-direction: column;
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .navlink {
+    margin: 1.5rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbutton {
+    margin-top: 1rem;
+  }
+
+  .nav.scrolled {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo.logo-scrolled {
+    font-size: 1.1rem;
+  }
+
+  .navlink.navlink-scrolled {
+    font-size: 0.75rem;
+  }
+
+  .navbutton button.contact-btn-scrolled {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navlink {
+    font-size: 0.8rem;
+  }
+
+  .navbutton button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem;
+  }
+}

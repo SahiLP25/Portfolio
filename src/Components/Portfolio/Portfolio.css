@@ -1,0 +1,84 @@
+.portfolio {
+    margin-top: 7vh;
+    min-height: 100vh;
+    background-color:#111111;
+    padding: 3rem 1rem;
+    border-bottom: 2px solid #292929d8;
+
+  }
+  
+  .portfolio h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: rgb(239, 87, 32);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    margin-top: 5vh;
+    background-color:#333333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ff8400;
+  }
+  
+  .project-description {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .project-year {
+    font-size: 0.875rem;
+    color: #ff9741;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .view-project-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-project-btn:hover {
+    background-color: #e2e8f0;
+  }
+  
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }

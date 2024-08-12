@@ -1,0 +1,108 @@
+#abt {
+  padding: 4rem 1.5rem;
+  border-bottom: 2px solid #292929d8;
+
+
+}
+
+#about,
+#education,
+.contact,
+.skill {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  border-bottom: 1px dashed rgb(136, 136, 136);
+}
+
+#about h2,
+#education h5,
+.contact h5,
+.skill h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b00;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#about p,
+.mca h4,
+#details h3 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+#about span {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+.mca {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.mca h4 {
+  flex: 1;
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.mca h4 span {
+  color: #ff6b00;
+}
+
+#details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+#details h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#details h3 span {
+  font-weight: 700;
+  color: #ff6b00;
+}
+
+#details a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#details a:hover {
+  color: #ff6b00;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#skills h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff6b00;
+  margin-bottom: 1rem;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skills li {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 0.5rem;
+}

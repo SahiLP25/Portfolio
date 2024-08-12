@@ -1,0 +1,82 @@
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #292929d8;
+  }
+  
+  #main {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1.5rem;
+    z-index: 1;
+  }
+  
+  #backtext {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .intro {
+    width: 50%;
+  }
+  
+  .intro h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e66000;
+    margin-bottom: 1rem;
+    animation: roleChange 3s ease-in-out infinite;
+  }
+  
+  @keyframes roleChange {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .resume {
+    display: inline-block;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume:hover {
+    background-color: #e66000;
+  }
